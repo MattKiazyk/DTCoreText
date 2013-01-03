@@ -48,7 +48,6 @@
 	__unsafe_unretained id <DTAttributedTextContentViewDelegate> _delegate;
 }
 
-@property (nonatomic, strong) NSMutableDictionary *customViewsForLinksIndex;
 @property (nonatomic, strong) NSMutableDictionary *customViewsForAttachmentsIndex;
 
 - (void)removeAllCustomViews;
@@ -283,7 +282,7 @@ static Class _layerClassToUseForDTAttributedTextContentView = nil;
 								[existingAttachmentView setNeedsLayout];
 								[existingAttachmentView setNeedsDisplay];
 								
-								linkURL = nil; // prevent adding link button on top of image view
+								//linkURL = nil; // prevent adding link button on top of image view
 							}
 							else
 							{
@@ -311,7 +310,7 @@ static Class _layerClassToUseForDTAttributedTextContentView = nil;
 										[self.customViews addObject:newCustomAttachmentView];
 										[self.customViewsForAttachmentsIndex setObject:newCustomAttachmentView forKey:indexKey];
 										
-										linkURL = nil; // prevent adding link button on top of image view
+										//linkURL = nil; // prevent adding link button on top of image view
 									}
 								}
 							}

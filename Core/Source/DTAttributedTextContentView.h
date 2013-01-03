@@ -130,6 +130,8 @@
 @property (nonatomic) CGPoint layoutOffset;
 @property (nonatomic) CGSize backgroundOffset;
 
+@property (nonatomic, strong) NSMutableDictionary *customViewsForLinksIndex;
+
 @property (nonatomic, assign) IBOutlet id <DTAttributedTextContentViewDelegate> delegate;	// subtle simulator bug - use assign not __unsafe_unretained
 
 @property (nonatomic, assign) dispatch_semaphore_t selfLock;

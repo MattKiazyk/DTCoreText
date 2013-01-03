@@ -58,6 +58,7 @@ static NSCache *_imageCache = nil;
 		} else {
 			[_urlRequest setCachePolicy:NSURLRequestReturnCacheDataElseLoad];
 			[_urlRequest setTimeoutInterval:10.0];
+			
 		}
 		
 		_connection = [[NSURLConnection alloc] initWithRequest:_urlRequest delegate:self startImmediately:NO];
