@@ -1,3 +1,6 @@
+require 'openssl'
+OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
+
 Pod::Spec.new do |spec|
   spec.name         = 'DTCoreText'
   spec.version      = '1.0.2'
