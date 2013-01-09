@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   spec.author       = { 'Oliver Drobnik' => 'oliver@drobnik.com' }
   spec.library      = 'xml2'
   spec.xcconfig     = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
-  spec.dependency   'DTFoundation', :podspec => 'https://gist.github.com/raw/4446818/355cd363e46f0ddc03e1ce418d212d0dad450b4f/DTFoundation.podspec'
+  spec.dependency   'DTFoundation', :podspec => 'https://gist.github.com/raw/4446818/17e54f6564bad00832ccb0ac74f49f0dd398e18b/DTFoundation.podspec'
   def spec.post_install(target)
     prefix_header = config.project_pods_root + target.prefix_header_filename
     prefix_header.open('a') do |file|
